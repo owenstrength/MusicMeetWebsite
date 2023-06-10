@@ -18,10 +18,37 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.mockup1 {
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
+}
+
+p {
+  margin: 5px;
+}
+
+h2 {
+  margin: 10px;
+}
+
+div {
+  height: auto;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translate(0, auto);
+  transition: all 0.75s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
