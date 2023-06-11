@@ -27,6 +27,7 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  padding-bottom: 100px;
 
 }
 
@@ -39,16 +40,119 @@ h2 {
 }
 
 div {
-  height: auto;
+  height: 250px;
+  padding-bottom: 40px;
+  overflow-anchor: auto;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translate(0, auto);
-  transition: all 0.75s;
-}
 
 .fade-in.visible {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.min-h-screen::-webkit-scrollbar {
+  display: none;
+}
+
+.first {
+  animation: signup-response 0.5s 1;
+  -webkit-animation: signup-response 0.5s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+  height: 250px;
+  padding-bottom: 40px;
+}
+
+.second {
+  animation: signup-response 0.5s 1;
+  -webkit-animation: signup-response 0.5s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+  height: 250px;
+  padding-bottom: 40px;
+}
+
+.testclass {
+  animation: signup-response 0.5s 1;
+  -webkit-animation: signup-response 0.5s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay: 9s;
+  -webkit-animation-delay: 9s;
+  /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+  height: 250px;
+  padding-bottom: 40px;
+}
+
+.fourth {
+  animation: signup-response 0.5s 1;
+  -webkit-animation: signup-response 0.5s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+  /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+}
+
+.fifth {
+  animation: signup-response 0.5s 1;
+  -webkit-animation: signup-response 0.5s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay: 15s;
+  -webkit-animation-delay: 15s;
+  /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+  height: 250px;
+  padding-top: 350px;
+  padding-bottom: 40px;
+}
+
+.spacer {
+  height: 5;
+  padding-bottom: 40px;
+}
+
+
+@keyframes signup-response {
+  from {
+    opacity: 0;
+    top: 0%;
+    height: 0;
+  }
+
+  to {
+    opacity: 1;
+    top: 250px;
+    height: 250px;
+  }
+}
+
+@-webkit-keyframes signup-response {
+  from {
+    opacity: 0;
+    top: 0%;
+    height: 0;
+  }
+
+  to {
+    opacity: 1;
+    top: 250px;
+    height: 250px;
+  }
 }
